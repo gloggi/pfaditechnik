@@ -1,0 +1,32 @@
+<script setup>
+import { useData } from "vitepress";
+
+// https://vitepress.dev/reference/runtime-api#usedata
+const { site, frontmatter, title } = useData();
+</script>
+
+<template>
+  <div class="flex justify-center w-full min-h-screen h-full background px-2 md:px-0">
+    <div
+      class="relative m-3 pl-8 pb-8 h-full min-h-[95vh] w-full md:w-2/3 bg-white rounded-r-2xl drop-shadow-2xl"
+      :class="{ 'pr-12': !frontmatter.home }"
+    >
+      <div class="absolute top-52 right-0">
+        <div
+          v-if="!frontmatter.home"
+          class="w-8 h-20 bg-book-red rounded-l-lg"
+        ></div>
+      </div>
+      <Content />
+    </div>
+  </div>
+</template>
+
+<style>
+.background {
+  background-image: url("/background.svg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+</style>
