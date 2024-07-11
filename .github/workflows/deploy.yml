@@ -19,6 +19,9 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '18'
+    
+    - name: Delete guide.md
+      run: rm guide.md
 
     - name: Install dependencies
       run: npm install

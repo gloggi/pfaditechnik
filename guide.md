@@ -37,25 +37,3 @@ Dies ist ein regulärer Absatz. Er wird für den Hauptteil des Textes im Dokumen
 1. Punkt 1
 2. Punkt 2
 3. Punkt 3
-
-## Alerts
-
-::: info
-This is an info box.
-:::
-
-::: tip
-This is a tip.
-:::
-
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
