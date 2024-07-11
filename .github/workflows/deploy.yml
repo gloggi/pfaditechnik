@@ -37,4 +37,4 @@ jobs:
         echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan -H $SSH_SERVER >> ~/.ssh/known_hosts
-        rsync -avz --delete ./.vitepress/dist/ $SSH_USERNAME@$SSH_SERVER:$DEPLOY_PATH
+        rsync -avz --delete .vitepress/dist/ $SSH_USERNAME@$SSH_SERVER:$DEPLOY_PATH
