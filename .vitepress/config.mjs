@@ -5,6 +5,7 @@ export default defineConfig({
   title: "Pfaditechnik",
   description: "In Wort und Bild",
   lang: "de-CH",
+  cleanUrls: true,
   head: [['link', { rel: 'icon', href: '/favicon.svg' }],['link', { rel: 'icon', href: '/favicon.ico' }]],
   transformHead({ assets }) {
     // adjust the regex accordingly to match your font
