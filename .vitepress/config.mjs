@@ -6,24 +6,8 @@ export default defineConfig({
   description: "In Wort und Bild",
   lang: "de-CH",
   cleanUrls: true,
+  srcExclude: ['**/README.md', '**/GUIDE.md'],
   head: [['link', { rel: 'icon', href: '/favicon.svg' }],['link', { rel: 'icon', href: '/favicon.ico' }]],
-  transformHead({ assets }) {
-    // adjust the regex accordingly to match your font
-    const myFontFile = assets.find(file => /BebasNeue-Regular\.woff2/)
-    if (myFontFile) {
-      return [
-        [
-          'link',
-          {
-            rel: 'preload',
-            href: myFontFile,
-            as: 'font',
-            type: 'font/woff2',
-            crossorigin: ''
-          }
-        ]
-      ]
-    }
-  }
+  
 
 })

@@ -14,7 +14,7 @@
 
 ###### Kleine Überschrift (H6)
 
-## Fließtext
+## Fliesstext
 
 ### Regulärer Absatz
 Dies ist ein regulärer Absatz. Er wird für den Hauptteil des Textes im Dokument verwendet.
@@ -23,7 +23,7 @@ Dies ist ein regulärer Absatz. Er wird für den Hauptteil des Textes im Dokumen
 ## Zitate
 
 ### Blockzitat
-> Dies ist ein Beispiel für ein Blockzitat. Es wird verwendet, um große Textabschnitte aus einer anderen Quelle zu zitieren.
+> Dies ist ein Beispiel für ein Blockzitat. Es wird verwendet, um grosse Textabschnitte aus einer anderen Quelle zu zitieren.
 
 
 ## Listen
