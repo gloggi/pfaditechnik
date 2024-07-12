@@ -2,16 +2,25 @@
 import { useData } from "vitepress";
 
 // https://vitepress.dev/reference/runtime-api#usedata
-const { site, frontmatter, title } = useData();
+const { site, frontmatter, title, page } = useData();
 </script>
 
 <template>
-  <div class="flex justify-center w-full min-h-screen h-full background px-2 md:px-0">
+  <div
+    class="flex justify-center w-full min-h-screen h-full background px-2 md:px-0"
+  >
     <div
       class="relative m-3 pl-8 pb-8 h-full min-h-[95vh] w-full md:w-2/3 bg-white rounded-r-2xl drop-shadow-2xl"
       :class="{ 'pr-12': !frontmatter.home }"
     >
-      <div class="absolute top-52 right-0">
+      <div v-if="!frontmatter.home" class="mt-2 -mb-2">
+        <a class="breadcrumblink" href="/">Pfaditechnik</a> /
+        <a class="breadcrumblink">{{ page.title }}</a>
+      </div>
+      <div
+        class="absolute right-0"
+        :style="`top: ${87 * frontmatter.order + 27}px;`"
+      >
         <div
           v-if="!frontmatter.home"
           class="w-8 h-20 bg-book-red rounded-l-lg"

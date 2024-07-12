@@ -5,7 +5,7 @@
   }
 
   h1 {
-    @apply text-4xl md:text-6xl font-semibold font-bebas uppercase text-book-red mt-8 mb-6 break-words;
+    @apply text-6xl font-semibold font-bebas uppercase text-book-red mt-4 mb-6 break-words;
   }
 
   h2 {
@@ -32,11 +32,16 @@
   }
 
   a {
-    @apply text-blue-700 underline hover:text-blue-900 font-normal;
+    @apply text-blue-700 underline hover:text-blue-900 font-normal cursor-pointer;
+  }
+
+  a.breadcrumblink {
+    @apply no-underline text-book-red hover:text-book-red hover:underline
   }
   blockquote {
     @apply p-4 italic border-l-4 bg-gray-100 border-gray-400;
   }
+
 }
 @tailwind components;
 @tailwind utilities;
