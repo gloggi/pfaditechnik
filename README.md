@@ -14,7 +14,7 @@ npm run docs:dev
 
 ## Beitragen
 
-Die Webseite basiert auf .md-Dateien (Markdown). Beim Deployment der Seite werden die .md-Dateien in HTML-Dateien umgewandelt, damit sie im passenden Layout erscheinen. Einen Guide für die verschiedenen Elemente, die in Markdown zur Verfügung stehen, findest du [hier](https://github.com/gloggi/pfaditechnik/blob/main/GUIDE.md).
+Die Webseite basiert auf .md-Dateien (Markdown). Beim Deployment der Seite werden die .md-Dateien in HTML-Dateien umgewandelt, damit sie im passenden Layout erscheinen. Einen Guide für die verschiedenen Elemente, die in Markdown zur Verfügung stehen, findest du [hier](https://github.com/gloggi/pfaditechnik/blob/main/example.md).
 
 Du kannst diese Dateien auf zwei Arten ändern:
 
