@@ -47,13 +47,13 @@ const { site, frontmatter, title, page } = useData();
 
 .warning.custom-block .custom-block-title {
     @apply size-8 whitespace-nowrap bg-contain bg-no-repeat text-transparent mt-1;
-    background-image: url('warning.svg');
+    background-image: url('/warning.svg');
     background-position: left center;
 }
 
 .info.custom-block .custom-block-title {
     @apply size-8 whitespace-nowrap bg-contain bg-no-repeat text-transparent mt-0;
-    background-image: url('info.svg');
+    background-image: url('/info.svg');
     background-position: left center;
 }
 
