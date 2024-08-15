@@ -15,6 +15,9 @@
   h3 {
     @apply text-xl md:text-2xl font-semibold font-bebas uppercase text-book-red mt-5 mb-3 break-words;
   }
+  h4 {
+    @apply text-lg md:text-xl font-semibold font-bebas uppercase text-book-red mt-5 mb-3 break-words;
+  }
   strong {
     @apply mb-1 font-semibold;
   }
@@ -28,7 +31,8 @@
   }
 
   li {
-    @apply mb-2;
+    @apply mb-1;
+    list-style-type: square;
   }
 
   a {
@@ -36,12 +40,19 @@
   }
 
   a.breadcrumblink {
-    @apply no-underline text-book-red hover:text-book-red hover:underline
+    @apply no-underline text-book-red hover:text-book-red hover:underline;
   }
   blockquote {
     @apply p-4 italic border-l-4 bg-gray-100 border-gray-400;
   }
 
+  table {
+    @apply my-5 w-full;
+  }
+
+  td {
+    @apply border-t border-b border-book-red py-1 px-4 text-left;
+  }
 }
 @tailwind components;
 @tailwind utilities;

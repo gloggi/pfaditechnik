@@ -6,8 +6,7 @@ export default defineConfig({
   description: "In Wort und Bild",
   lang: "de-CH",
   cleanUrls: true,
-  srcExclude: ['**/README.md', '**/GUIDE.md'],
+  srcExclude: ['**/README.md'],
   head: [['link', { rel: 'icon', href: '/favicon.svg' }],['link', { rel: 'icon', href: '/favicon.ico' }]],
-  
-
+  scrollOffset: 5,
 })

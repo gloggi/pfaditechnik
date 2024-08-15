@@ -20,12 +20,6 @@
 Dies ist ein regulärer Absatz. Er wird für den Hauptteil des Textes im Dokument verwendet.
 
 
-## Zitate
-
-### Blockzitat
-> Dies ist ein Beispiel für ein Blockzitat. Es wird verwendet, um grosse Textabschnitte aus einer anderen Quelle zu zitieren.
-
-
 ## Listen
 
 ### Ungeordnete Liste
@@ -37,3 +31,29 @@ Dies ist ein regulärer Absatz. Er wird für den Hauptteil des Textes im Dokumen
 1. Punkt 1
 2. Punkt 2
 3. Punkt 3
+
+### Tabelle
+
+
+## Alerts
+
+### Warnungen
+
+::: warning
+So kannst du Warnungen Anzeigen lassen.
+:::
+
+### Infos
+
+::: info
+So kannst du Infos Anzeigen lassen.
+:::
+
+## Tabellen
+
+|                    |                                                                                                  |
+|--------------------|--------------------------------------------------------------------------------------------------|
+| Tabelle            | So kannst du eine Tabelle anzeigen lassen                                                        |
+| Zeile              | 2                                                                                                |
+| Zeile              | 3                                                                                                |
+| Zeile              | 4                                                                                                |
