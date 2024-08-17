@@ -1,0 +1,16 @@
+### Post Order to localhost:8000/order
+POST http://localhost:8000/api/order
+Content-Type: application/json
+Accept: application/json
+
+{
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "johndoe@example.com",
+    "delivery_first_name": "Jane",
+    "delivery_last_name": "Doe",
+    "delivery_street": "Bahnhofstrasse 17",
+    "delivery_zip": "8603",
+    "delivery_town": "Schwerzenbach",
+    "quantity": 20
+}
