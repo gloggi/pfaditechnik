@@ -17,8 +17,9 @@ Sei bei den ersten, die bestellen und sichere dir für Sammelbestellungen den Ei
 
 *keine Versandkosten*
 
-Hinterlege deine E-Mailadresse und wir informieren dich, sobald du die Bestellung aufgeben kannst.
 
+### Jetzt bestellen
+Bitte fülle das Formular aus, um eine Sammelbestellung aufzugeben. Nach der Bestellung erhältst du per E-Mail eine Bestellbestätigung und die dazugehörige Rechnung, die wir dich bitten, zu begleichen. Sobald die Zahlung eingegangen ist, verschicken wir die Bücher.
 <BulkOrderForm />
 
 ## Einzeln Bestellen

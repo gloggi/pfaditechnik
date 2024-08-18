@@ -1,7 +1,7 @@
 <template>
     <div class="w-full">
     <label class="block text-book-red  text-sm font-bold mb-2 upper">
-        {{ label }}
+        {{ label }} {{ required ? "*" : "" }}
     </label>
     <input
       v-model="payload"

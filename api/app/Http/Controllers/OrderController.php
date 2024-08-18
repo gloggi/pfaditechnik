@@ -16,6 +16,7 @@ class OrderController extends Controller
     {
 
         $validated = $request->validate([
+            'pfadiname' => 'nullable',
             'first_name' => 'required',
             'last_name' => 'required',
             'email' => 'required|email',
