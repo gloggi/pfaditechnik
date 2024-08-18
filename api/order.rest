@@ -1,10 +1,10 @@
 ### Post Order to localhost:8000/order
-POST http://localhost:8000/api/order
+POST http://localhost:8000/order
 Content-Type: application/json
 Accept: application/json
 
 {
-    "first_name": "John",
+    "first_name": "Max",
     "last_name": "Doe",
     "email": "johndoe@example.com",
     "delivery_first_name": "Jane",

@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'locale' => env('APP_LOCALE', 'en'),
+    'locale' => env('APP_LOCALE', 'de'),
 
     'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
 
@@ -130,6 +130,7 @@ return [
         'town' => env('CREDITOR_TOWN', ''),
         'country' => env('CREDITOR_COUNTRY', 'CH'),
         'iban' => env('CREDITOR_IBAN', ''),
+        'email' => env('CREDITOR_EMAIL', ''),
     ],
 
 ];

@@ -6,6 +6,7 @@ use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\OrderConfirmationMail;
+use App\Mail\OrderInfoMail;
 use Sprain\SwissQrBill as QrBill;
 use Illuminate\Support\Facades\Storage;
 
@@ -46,6 +47,7 @@ class OrderController extends Controller
 
 
         Mail::to($order->email)->send(new OrderConfirmationMail($order, $filePath));
+        Mail::to(config('app.creditor.email'))->send(new OrderInfoMail($order));
 
 
         return response()->json(['message' => 'Order placed successfully and confirmation email sent.'], 201);

@@ -35,7 +35,7 @@ class OrderConfirmationMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Order Confirmation')
+        return $this->subject('Bestellbestätigung Sammelbestellung Pfaditechnik')
                     ->markdown('emails.orders.confirmation')
                     ->with('order', $this->order)
                     ->attach(Storage::path($this->filePath), [

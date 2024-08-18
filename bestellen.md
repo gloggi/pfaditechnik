@@ -19,5 +19,7 @@ Sei bei den ersten, die bestellen und sichere dir für Sammelbestellungen den Ei
 
 Hinterlege deine E-Mailadresse und wir informieren dich, sobald du die Bestellung aufgeben kannst.
 
+<BulkOrderForm />
+
 ## Einzeln Bestellen
 <LinkButton link="https://www.hajk.ch/de/pfaditechnik-in-wort-und-bild-pfadi-glockenhof">Pfaditechnik bei Hajk bestellen</LinkButton>

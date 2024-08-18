@@ -13,7 +13,7 @@ const goToLink = () => {
 }
 </script>
 <template>
-<button class="rounded-lg p-3 text-white bg-book-red" @click="goToLink">
+<button class="rounded-md p-3 text-white bg-book-red" @click="goToLink">
     <slot></slot>
 </button>
 </template>
