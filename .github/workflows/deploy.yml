@@ -41,11 +41,16 @@ jobs:
         cd .vitepress/dist
         rsync -avz --delete . $SSH_USERNAME@$SSH_SERVER:$DEPLOY_PATH
 
+    - name: Ensure bootstrap/cache directory exists and is writable
+      run: |
+        mkdir -p ./api/bootstrap/cache
+        chmod -R 775 ./api/bootstrap/cache
+
     - name: Install PHP 8.2 and Composer
       run: |
         sudo add-apt-repository ppa:ondrej/php -y
         sudo apt-get update
-        sudo apt-get install -y php8.2 php8.2-cli php8.2-mbstring php8.2-xml php8.2-curl php8.2-zip unzip curl
+        sudo apt-get install -y php8.2 php8.2-cli php8.2-mbstring php8.2-xml php8.2-curl php8.2-zip php8.2-intl php8.2-bcmath unzip curl
         curl -sS https://getcomposer.org/installer | php
         sudo mv composer.phar /usr/local/bin/composer
 
@@ -68,11 +73,21 @@ jobs:
         MAIL_ENCRYPTION: ${{ secrets.MAIL_ENCRYPTION }}
         MAIL_FROM_ADDRESS: ${{ secrets.MAIL_FROM_ADDRESS }}
         MAIL_FROM_NAME: ${{ secrets.MAIL_FROM_NAME }}
+        APP_KEY: ${{ secrets.APP_KEY }}
+        FRONTEND_URL: ${{ vars.FRONTEND_URL }}
+        CREDITOR_NAME: ${{ vars.CREDITOR_NAME }}
+        CREDITOR_STREET: ${{ vars.CREDITOR_STREET }}
+        CREDITOR_TOWN: ${{ vars.CREDITOR_TOWN }}
+        CREDITOR_ZIP: ${{ vars.CREDITOR_ZIP }}
+        CREDITOR_IBAN: ${{ vars.CREDITOR_IBAN }}
+        CREDITOR_EMAIL: ${{ vars.CREDITOR_EMAIL }}
+
       run: |
         cd ./api
         rm -f .env
-        cp .env.example .env
+        cp env.example .env
         sed -ri "s~^APP_URL=.*$~APP_URL=$BACKEND_URL~" .env
+        sed -ri "s~^FRONTEND_URL=.*$~FRONTEND_URL=$FRONTEND_URL~" .env
         sed -ri "s~^DB_HOST=.*$~DB_HOST=$DB_HOST~" .env
         sed -ri "s~^DB_DATABASE=.*$~DB_DATABASE=$DB_DATABASE~" .env
         sed -ri "s~^DB_USERNAME=.*$~DB_USERNAME=$DB_USERNAME~" .env
@@ -84,8 +99,14 @@ jobs:
         sed -ri "s~^MAIL_PORT=.*$~MAIL_PORT=$MAIL_PORT~" .env
         sed -ri "s~^MAIL_ENCRYPTION=.*$~MAIL_ENCRYPTION=$MAIL_ENCRYPTION~" .env
         sed -ri "s~^MAIL_FROM_ADDRESS=.*$~MAIL_FROM_ADDRESS=$MAIL_FROM_ADDRESS~" .env
-        sed -ri "s~^MAIL_FROM_NAME=.*$~MAIL_FROM_NAME=$MAIL_FROM_NAME~" .env
+        sed -ri "s~^MAIL_FROM_NAME=.*\$~MAIL_FROM_NAME=\"$MAIL_FROM_NAME\"~" .env
         sed -ri "s~^APP_KEY=.*$~APP_KEY=$APP_KEY~" .env
+        sed -ri "s~^CREDITOR_NAME=.*\$~CREDITOR_NAME=\"$CREDITOR_NAME\"~" .env
+        sed -ri "s~^CREDITOR_STREET=.*\$~CREDITOR_STREET=\"$CREDITOR_STREET\"~" .env
+        sed -ri "s~^CREDITOR_TOWN=.*\$~CREDITOR_TOWN=\"$CREDITOR_TOWN\"~" .env
+        sed -ri "s~^CREDITOR_ZIP=.*\$~CREDITOR_ZIP=\"$CREDITOR_ZIP\"~" .env
+        sed -ri "s~^CREDITOR_IBAN=.*\$~CREDITOR_IBAN=\"$CREDITOR_IBAN\"~" .env
+        sed -ri "s~^CREDITOR_EMAIL=.*\$~CREDITOR_EMAIL=\"$CREDITOR_EMAIL\"~" .env
 
     - name: Deploy backend via SSH
       env:
@@ -116,7 +137,7 @@ jobs:
         SSH_SERVER: ${{ vars.SSH_SERVER }}
         DEPLOY_PATH_BACKEND: ${{ vars.DEPLOY_PATH_BACKEND }}
       run: |
-        ssh -i ~/.ssh/id_rsa $SSH_USERNAME@$SSH_SERVER "cd $DEPLOY_PATH_BACKEND && php artisan migrate --force"
+        ssh -i ~/.ssh/id_rsa $SSH_USERNAME@$SSH_SERVER "cd $DEPLOY_PATH_BACKEND && /usr/local/php83/bin/php artisan migrate --force"
 
     - name: Optimize application
       env:
@@ -125,4 +146,4 @@ jobs:
         SSH_SERVER: ${{ vars.SSH_SERVER }}
         DEPLOY_PATH_BACKEND: ${{ vars.DEPLOY_PATH_BACKEND }}
       run: |
-        ssh -i ~/.ssh/id_rsa $SSH_USERNAME@$SSH_SERVER "cd $DEPLOY_PATH_BACKEND && php artisan config:cache && php artisan route:cache && php artisan view:cache"
+        ssh -i ~/.ssh/id_rsa $SSH_USERNAME@$SSH_SERVER "cd $DEPLOY_PATH_BACKEND && /usr/local/php83/bin/php artisan config:cache && /usr/local/php83/bin/php artisan route:cache && /usr/local/php83/bin/php artisan view:cache"

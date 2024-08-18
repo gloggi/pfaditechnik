@@ -133,4 +133,6 @@ return [
         'email' => env('CREDITOR_EMAIL', ''),
     ],
 
+    'frontend_url' => env('FRONTEND_URL', ''),
+
 ];
