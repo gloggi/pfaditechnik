@@ -18,11 +18,15 @@ jobs:
 
     - name: Set up Node.js
       uses: actions/setup-node@v2
-      with:
-        node-version: '18'
 
     - name: Install frontend dependencies
       run: npm install
+    
+    - name: Create .env file
+      env:
+        VITE_BACKEND_URL: ${{ secrets.BACKEND_URL }}
+      run: |
+        echo "VITE_BACKEND_URL=$VITE_BACKEND_URL" > .env
 
     - name: Build the frontend project
       run: npm run docs:build
