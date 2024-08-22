@@ -24,13 +24,6 @@ Eigenverlag\
 *Cudesch – Leiten in der Pfadi*\
 2023, Eigenverlag Bern
 
-### Seil
-
-**Sam Brüngger, Matthias Lüthi**\
-*Seiltechnik*\
-2022, 3. Auflage, 144 Seiten\
-Rex Verlag Luzern
-
 ### Lager
 
 **Sam Brüngger, Matthias Lüthi**\
