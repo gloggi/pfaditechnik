@@ -53,6 +53,10 @@
   td {
     @apply border-t border-b border-book-red py-1 px-4 text-left;
   }
+
+  img {
+    @apply mx-auto my-5;
+  }
 }
 @tailwind components;
 @tailwind utilities;

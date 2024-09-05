@@ -18,7 +18,7 @@ const props = defineProps({
     class="rounded-l-2xl w-full bg-chapter-red flex items-center cursor-pointer no-underline mt-2"
   >
     <div class="size-20 rounded-2xl bg-book-red">
-      <img :src="image" class="w-full h-full p-2" />
+      <img :src="image" class="w-full h-full p-2 my-0" />
     </div>
     <div class="pl-3">
       <p
