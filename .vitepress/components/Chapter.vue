@@ -15,11 +15,13 @@ const props = defineProps({
 <template>
   <a
     :href="link"
-    class="rounded-l-2xl w-full bg-chapter-red flex items-center cursor-pointer no-underline mt-2"
+    class="rounded-l-2xl w-full bg-chapter-red flex items-center cursor-pointer no-underline mt-2 justify-start"
   >
+  <div class="w-fit">
     <div class="size-20 rounded-2xl bg-book-red">
       <img :src="image" class="w-full h-full p-2 my-0" />
     </div>
+  </div>
     <div class="pl-3">
       <p
         class="text-4xl font-semibold font-bebas uppercase text-book-red"
