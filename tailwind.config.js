@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./.vitepress/theme/**/*.{js,vue}",
     "./.vitepress/components/**/*.{js,vue}",
+    "./*.md",
   ],
   theme: {
     fontFamily: {
