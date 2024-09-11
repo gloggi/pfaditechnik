@@ -33,7 +33,7 @@ const { site, frontmatter, title, page } = useData();
 
 <style>
 .background {
-  background-image: url("/background.svg");
+  background-image: url("/background_new.svg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
