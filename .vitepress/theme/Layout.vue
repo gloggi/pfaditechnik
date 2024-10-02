@@ -57,5 +57,18 @@ const { site, frontmatter, title, page } = useData();
     background-position: left center;
 }
 
+.tip.custom-block .custom-block-title {
+  @apply hidden;
+}
+
+.tip.custom-block a{
+    @apply text-white font-semibold;
+}
+
+.tip.custom-block {
+    @apply bg-book-red rounded-lg p-5 text-white font-semibold;
+
+}
+
 
 </style>
