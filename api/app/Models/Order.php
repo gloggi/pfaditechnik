@@ -23,5 +23,6 @@ class Order extends Model
         'delivery_town',
         'amount',
         'quantity',
+        'shipping_date',
     ];
 }

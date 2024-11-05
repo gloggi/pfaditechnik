@@ -82,6 +82,8 @@ class OrderResource extends Resource
                     ->label('Zu bezahlen')
                     ->required()
                     ->numeric(),
+                Forms\Components\DatePicker::make('shipping_date')
+                    ->label('Versanddatum'),
             ]);
     }
 
@@ -113,6 +115,10 @@ class OrderResource extends Resource
                     ->numeric()
                     ->sortable()
                     ->formatStateUsing(fn ($state) => 'CHF ' . $state),
+                Tables\Columns\TextColumn::make('shipping_date')
+                    ->label('Versanddatum')
+                    ->date('d.m.Y')
+                    ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
