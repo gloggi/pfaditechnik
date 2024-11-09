@@ -4,7 +4,7 @@ order: 1
 # Bestellen
 
 ::: tip
-Am 23.10.2024 um 20 Uhr findet im [Gloggi-Lädeli](https://maps.app.goo.gl/ye9bRfzE6daAUk4k8) an der Sihlstrasse 33, 8001 Zürich, ein Release-Apéro statt, bei dem Einzelexemplare zum Einführungspreis von 22.- erworben werden können.
+Im [Gloggi-Lädeli](https://maps.app.goo.gl/ye9bRfzE6daAUk4k8) an der Sihlstrasse 33, 8001 Zürich, können Einzelexemplare zum Einführungspreis von 22.- erworben werden können. Sammelbestellungen nehmen wir gerne entgegen (siehe Formular unten).
 :::
 ## Sammelbestellung
 ### Neue Pfaditechnik, komplett entstaubt und überarbeitet

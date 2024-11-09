@@ -7,7 +7,7 @@ Als Ergänzung zum Buch "Pfaditechnik in Wort und Bild" findest du hier einige I
 
 <div class="tip custom-block mr-8">
 <p>
-Am 23.10.2024 um 20 Uhr findet im <a href="https://maps.app.goo.gl/ye9bRfzE6daAUk4k8">Gloggi-Lädeli</a> an der Sihlstrasse 33, 8001 Zürich, ein Release-Apéro statt, bei dem Einzelexemplare zum Einführungspreis von 22.- erworben werden können.
+Im <a href="https://maps.app.goo.gl/ye9bRfzE6daAUk4k8">Gloggi-Lädeli</a> an der Sihlstrasse 33, 8001 Zürich, können Einzelexemplare zum Einführungspreis von 22.- erworben werden können. Sammelbestellungen nehmen wir gerne entgegen (siehe Rubrik unten).
 </p>
 </div>
 
