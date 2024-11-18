@@ -27,4 +27,4 @@ Bitte fülle das Formular aus, um eine Sammelbestellung aufzugeben. Nach der Bes
 <BulkOrderForm />
 
 ## Einzeln Bestellen
-<LinkButton link="https://www.hajk.ch/de/pfaditechnik-in-wort-und-bild-pfadi-glockenhof">Pfaditechnik bei Hajk bestellen</LinkButton>
+<LinkButton link="https://www.hajk.ch/de/catalog/product/view/id/74505/">Pfaditechnik bei Hajk bestellen</LinkButton>

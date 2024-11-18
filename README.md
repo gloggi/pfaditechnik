@@ -1,6 +1,6 @@
 # Pfaditechnik
 
-Dies ist die offizielle Webseite zum Buch [*Pfaditechnik in Wort und Bild*](https://www.hajk.ch/de/pfaditechnik-in-wort-und-bild-pfadi-glockenhof) der Pfadi Glockenhof. Die Webseite bietet zusätzliche Informationen zum Buch, Referenzen zu weiterführender Literatur und wichtige Adressen.
+Dies ist die offizielle Webseite zum Buch [*Pfaditechnik in Wort und Bild*](https://www.hajk.ch/de/catalog/product/view/id/74505/) der Pfadi Glockenhof. Die Webseite bietet zusätzliche Informationen zum Buch, Referenzen zu weiterführender Literatur und wichtige Adressen.
 
 ## Installation
 
