@@ -3,6 +3,8 @@ order: 3
 ---
 # Seil
 
+<PageNavigator/>
+
 ## Seil spannen für Pionierbauten
 
 <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/6MD2go4bZ9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
