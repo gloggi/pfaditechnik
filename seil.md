@@ -1,13 +1,14 @@
 ---
 order: 3
 ---
+
 # Seil
 
 <PageNavigator/>
 
 ## Pionierbauten
 
-Knoten und Techniken die für Pionierbauten benutzt werden.
+Knoten und Techniken, die für Pionierbauten benutzt werden.
 
 ### Seil spannen für Pionierbauten
 
@@ -17,24 +18,22 @@ Lagerbauten müssen abgespannt werden. Da hier keine Personen gesichert werden, 
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-2 pt-5 pb-5">
 <p>Lagerbauten müssen abgespannt werden. Da hier keine Personen gesichert werden, können Knoten wie der Fuhrmann und das Bretzeli verwendet werden.</p>
-<figure class="image">
-  <img class="rounded-md" src="/img/seil/Abspannen_von_Lagerbauten.png" />
-</figure>
+<Image imgSrc="/img/seil/Abspannen_von_Lagerbauten.png"></Image>
 </div>
 
 <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/6MD2go4bZ9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Sicherheitsrelevante Aktivitäten
 
-::: warning
-Diese Inhalte dienen nur als Ergänzung zu den Angaben im "Pfaditechnik", sie ersetzen nicht die Ausbildung.
+::: warning 
+Diese Inhalte dienen nur als Ergänzung zu den Angaben im "Pfaditechnik", sie ersetzen keine Ausbildung.
 :::
 
 ### Seil spannen für sicherheitsrelevante Aktivitäten nach J+S
 
 <Image imgSrc="public/img/seil/Seilbrücke_img0.png"></Image>
 
-Das Bauen von Seilbrücken oder Seilbahnen sind sicherheitsrelevante Aktivitäten, deswegen müssen hier die Vorschriften von J&S beachtet werden, damit alle Teilnehmenden ausreichend sicher sind.
+Der Bau von Seilbrücken oder Seilbahnen ist eine sicherheitsrelevante Aktivität. Daher müssen hier die Vorschriften von J+S beachtet werden, damit alle Teilnehmenden ausreichend sicher sind.
 
 <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/fiJmLdYTo3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -48,15 +47,12 @@ Das Bauen von Seilbrücken oder Seilbahnen sind sicherheitsrelevante Aktivitäte
 
 <Image imgSrc="/img/seil/prohaska.png"></Image>
 
-Eine gute Alternative zum Prusik. Der Prohaska kann Zugkraft in eine Richtung aufnehmen und mit einer Reepschnur oder auch einer Bandschlinge ausgeführt werden.
+Eine gute Alternative zum Prusik. Der Prohaska kann Zugkraft in eine Richtung aufnehmen und mit einer Reepschnur oder  einer Bandschlinge ausgeführt werden.
 
 <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/pHEH5U-X7PY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Schmetterlingsknoten
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-2 pt-5 pb-5">
-<Image imgSrc="/img/seil/Schmetterlingknoten2.png"></Image>
-<p>Um eine Schlaufe in einem gestreckten Seil zu erstellen kann der Schmetterlingsknoten verwendet werden. Dieser Knoten ist sehr seilschonend und kann gut wieder geöffnet werden.</p>
-</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2 pt-5 pb-5"> <Image imgSrc="/img/seil/Schmetterlingknoten2.png"></Image> <p>Der Schmetterlingsknoten wird verwendet, um eine Schlaufe in einem gestreckten Seil zu bilden. Dieser Knoten schont das Seil und kann gut wieder geöffnet werden.</p> </div>
 
 <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/zM15kf05myE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
