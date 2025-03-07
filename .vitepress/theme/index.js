@@ -7,7 +7,6 @@ import LinkButton from '../components/LinkButton.vue'
 import PageNavigator from '../components/PageNavigator.vue'
 import BulkOrderForm from '../components/BulkOrderForm.vue'
 import ImageWithCaption from '../components/ImageWithCaption.vue'
-import Image from '../components/Image.vue'
 
 
 /** @type {import('vitepress').Theme} */
@@ -19,7 +18,6 @@ export default {
     app.component('PageNavigator', PageNavigator)
     app.component('BulkOrderForm', BulkOrderForm)
     app.component('ImageWithCaption', ImageWithCaption)
-    app.component('Image', Image)
 
   }
 }
